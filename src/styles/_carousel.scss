@@ -1,0 +1,106 @@
+@use 'variables';
+
+.carousel {
+    padding: 0 4vw;
+    width: 100%;
+    position: relative;
+    
+
+    &__tabs {
+        text-align: center;
+
+        &__button {
+            color: variables.$secondColor;
+            background-color: transparent;
+            font-size: 20px;
+            margin-right: 20px;
+            border: none;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+
+            &:hover {
+                color: variables.$mainTextColor;
+                transition: .3s ease;
+            }
+
+            &--is-active {
+                color: variables.$mainTextColor;
+                border-bottom: 2px solid variables.$mainTextColor;
+            }
+        }
+    }
+    .text {
+        margin: 16px 0;
+    }
+
+        &__content {
+            opacity: 0;
+            height: 0;
+            width: 100%;
+            white-space: nowrap;
+            overflow-x: hidden;
+            position: relative;
+            overflow-y: hidden;
+
+            &__item {
+                display: inline-block;
+    
+                img {
+                    max-width: 300px;
+                    border-radius: 0.3rem;
+                    margin: 0px 5px;
+
+                    @media (max-width: 768px) {
+                        max-width: 220px;
+                    }
+                }
+            }
+            &--is-active {
+                opacity: 1;
+                height: 100%;
+            }
+    
+    
+            &__button {
+                position: absolute;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                height: 90%;
+                font-size: 40px;
+                color: variables.$mainTextColor;
+                
+                &:hover {
+                    background-color: #0000003d;
+                    transition: 0.4s ease-out;
+                    scale: 1.2;
+                }
+            }
+        .previous {
+            left: 0;
+        }
+        .next {
+            right: 0;
+        }
+
+        }
+            #detalhes {
+                margin: 0 auto;
+                max-width: 90%;
+
+                h3 {
+                    padding: 50px 0 12px;
+                }
+                .text--small, .text--small--gray {
+                    margin-bottom: 44px;
+                }
+
+                @media (max-width: 768px) {
+                    width: 680px;
+                    white-space: wrap;
+                    
+                }
+            }
+
+
+}

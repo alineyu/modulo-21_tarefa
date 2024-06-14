@@ -1,0 +1,64 @@
+@use 'variables';
+@use 'hero';
+@use 'carousel';
+@use 'footer';
+@use 'header';
+
+@font-face {
+    font-family: Amazon;
+    src: url(../../assets/fonts/Amazon\ Ember\ Medium.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Amazon;
+    src: url(../../assets/fonts/Amazon\ Ember\ Display\ Heavy.otf);
+    font-weight: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Amazon, sans-serif;
+    list-style-type: none;
+}
+
+
+body {
+    background-color: variables.$bgColor;
+    
+}
+
+@mixin text($fontSize: 20px) {
+    font-size: $fontSize;
+}
+
+.title {
+    max-width: 680px;
+    font-size: 50px;
+    color: variables.$mainTextColor;
+    font-weight: 700;
+    
+}
+.text {
+    @include text;
+    color: variables.$mainTextColor;
+}
+.text--gray {
+    @include text;
+    color: variables.$secondColor;
+}
+.text--small {
+    @include text(18px);
+    color: variables.$mainTextColor
+}
+.text--small--gray {
+    @include text(18px);
+    color: variables.$secondColor;
+}
+.link-text {
+    @include text(15px);
+    color: variables.$linkTextColor;
+    text-decoration: none;
+}

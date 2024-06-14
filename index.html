@@ -4,9 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prime Video: Everything Everywhere All At Once</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1><img class="logo" src="src/images/Logo-min.png" alt="logo"></h1>
+            <ul class="header__links">
+                <li class="text--small--gray" >Início<i class='bx bx-chevron-down'></i></li>
+                <li class="text--small--gray">Loja<i class='bx bx-chevron-down'></i></li>
+                <li class="text--small--gray">TV ao vivo</li>
+                <li class="text--small--gray">Categorias<i class='bx bx-chevron-down'></i></li>
+                <li class="text--small--gray"><i class='bx bx-search'></i></li>
+                <li class="text--small--gray">Experimente grátis</li>
+                <li class="text--small--gray">PT <i class='bx bx-chevron-down'></i></li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <span class="text oscar">7 OSCARS®</span>
+            <h1 class="title">Everything Everywhere All at Once</h1>
+            <p class="text">An unlikely hero uses newfound powers to fight fearsome and bewildering dangers from the multiverse.</p>
+            <div class="hero__content__info">
+                <span class="span text--gray">IMDb 7,8</span>
+                <span class="span text--gray">2h 15min</span>
+                <span class="span text--gray">2022</span>
+                <span class="span text--gray"><img class="censura-image" src="src/images/14.png" alt="14"></span>
+            </div>
+            <div class="hero__content__genero">
+                <span class="span"><a class="text" href="#">Ação</a></span>
+                <span class="text--gray">·</span>
+                <span class="span"><a class="text" href="#">Comédia</a></span>
+                <span class="text--gray">·</span>
+                <span class="span text--gray">Excitante</span>
+                <span class="text--gray">·</span>
+                <span class="span text--gray">Estranho</span>
+            </div>
+            <div class="hero__content__icons">
+                <div class="box-indisponivel">
+                    <p class="text">No momento, este vídeo está indisponível em sua localidade</p>
+                </div>
+                <div class="icons">
+                    <a class="icon-link" href="#"><i class='bx bx-movie-play'></i></a>
+                    <a class="icon-link" href="#"><i class='bx bx-plus'></i></a>
+                    <a class="icon-link" href="#"><i class='bx bx-like' ></i></a>
+                    <a class="icon-link" href="#"><i class='bx bx-dislike' ></i></a>
+                    <a class="icon-link" href="#"><i class='bx bx-share-alt'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="carousel">
+        <nav class="carousel__tabs">
+            <button data-tab-button="relacionados" class="carousel__tabs__button carousel__tabs__button--is-active">Relacionados</button>
+            <button data-tab-button="detalhes" class="carousel__tabs__button">Detalhes</button>
+        </nav>
+        <ul class=" carousel__content  carousel__content--is-active" data-tab-id="relacionados">
+                <p class="text">Os clientes também assistiram</p>
+                    <li class="carousel__content__item">
+                        <img src="src/images/carousel/movie1.webp" alt="">
+                    </li>
+                    <li class="carousel__content__item">
+                        <img src="src/images/carousel/movie2.webp" alt="">
+                    </li>
+                    <li class="carousel__content__item">
+                        <img src="src/images/carousel/movie3.webp" alt="">
+                    </li>
+                    <li class="carousel__content__item">
+                        <img src="src/images/carousel/movie4.webp" alt="">
+                    </li>
+                    <li class="carousel__content__item">
+                        <img src="src/images/carousel/movie5.webp" alt="">
+                    </li>
+                    <li class="carousel__content__item">
+                        <img src="src/images/carousel/movie6.webp" alt="">
+                    </li>
+                    <button class="carousel__content__button next" data-carousel-button-previous><i class='bx bx-chevron-right' ></i></button>
+                    <button class="carousel__content__button previous"><i class='bx bx-chevron-left'  ></i></button>
+            </ul>
+        
+            <ul class="carousel__content" id="detalhes" data-tab-id="detalhes">
+                <h3 class="text">Saiba mais</h3>
+                <p class="text">Legendas</p>
+                <p class="text--small--gray">Indisponíveis</p>
+                <p class="text">Diretores</p>
+                <p class="text--small">Daniel Scheinert, Dan Kwan</p>
+                <p class="text">Produtores</p>
+                <p class="text--small">Dan Kwan, Allison Rose Carter, Sarah Finn, Tim Headington, Mike Larocca, Todd Makurath, Theresa Steele Page, Jon Read, Josh Rudnick</p>
+                <p class="text">Atores principais</p>
+                <p class="text--small">Michelle Yeoh, Stephanie Hsu, Ke Huy Quan</p>
+                <p class="text">Estúdio</p>
+                <p class="text--small--gray">Elevation Pictures</p>
+                <p class="text--small--gray">Ao clicar em Reproduzir, você concorda com nossos <a class="text--small" href="#">Termos de uso</a>.</p>
+                <hr>
+                <h3 class="text">Feedback</h3>
+                <a class="text--small" href="#">Enviar feedback</a>
+
+                <h3 class="text">Suporte</h3>
+                <a class="text--small" href="#">Ajuda</a>
+            </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img src="src/images/Logo-min.png" alt="">
+            <div class="footer__container__text">
+                <a class="link-text" href="#">Termos e aviso de privacidade</a>
+                <a class="link-text" href="#">Enviar feedback</a>
+                <a class="link-text" href="#">Ajuda</a>
+                <p class="text--small--gray">© 1996-2024, Amazon.com, Inc. ou suas afiliadas</p>
+            </div>
+        </div>
+    </footer>
     
+    <script src="src/scripts/main.js"></script>
 </body>
 </html>

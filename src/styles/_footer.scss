@@ -1,0 +1,41 @@
+.footer {
+    margin: 80px 0 32px;
+
+    @media (max-width: 768px) {
+        .footer__container {
+            img {
+                width: 90px;
+            }
+
+            &__text {
+                display: block;
+            }
+        }
+    }
+    
+    &__container {
+        margin: 0 auto;
+        text-align: center;
+
+    img {
+        width: 120px;
+        margin-bottom: 12px;
+        
+        }
+            &__text {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 16px;
+
+                a {
+                    margin-right: 12px;
+                    font-size: 15px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+    }
+
+    
+}

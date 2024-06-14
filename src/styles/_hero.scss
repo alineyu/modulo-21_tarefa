@@ -1,0 +1,106 @@
+
+@use 'variables';
+
+.hero {
+    
+    padding: 4vw;
+    min-height: 96vh;
+    background-image: linear-gradient(to right, variables.$bgColor 20%, rgba(11, 11, 11, 0)), 
+    url(/src/images/hero-1920.webp);
+    background-size:  cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: 768px) {
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        .text {
+            font-size: 16px;
+        }
+
+        .title {
+            font-size: 28px;
+        }
+
+        span {
+            font-size: 16px;
+        }
+
+        .hero__content__icons {
+            display: block;
+
+            .icons {
+                margin-top: 20px;
+                
+                .bx {
+                    font-size: 24px;
+                }
+            }
+        }
+        
+    }
+    
+    &__content {
+        max-width: 840px;
+        margin-top: 180px;
+
+    &__info {
+        margin: 16px 0px;
+        display: flex;
+        align-items: center;
+        
+        .span {
+            margin-right: 20px;
+        }
+
+        .censura-image {
+            height: 20px;
+        }
+    }
+    &__genero {
+        span {
+            margin-right: 4px;
+        }
+    }
+        
+    &__icons {
+        margin-top: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .box-indisponivel {
+            width: 52%;
+            border: 3px solid #33373D;
+            padding: 14px 18px;
+        }
+        .icons {
+
+            .bx {
+                color: variables.$mainTextColor;
+                background-color: #33373d8e;
+                padding: 16px;
+                border-radius: 50%;
+                font-size: 32px;
+                margin-left: 8px;
+
+                &:hover {
+                    background-color: variables.$mainTextColor;
+                    color: #000;
+                    transition: .3s ease-out;
+                    scale: 1.1;
+                }
+            }
+
+        }
+        
+    }
+
+
+
+    .title {
+        margin: 42px 0 48px;
+    }
+    }
+
+}
