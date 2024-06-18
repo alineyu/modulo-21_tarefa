@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
 
     const buttons = document.querySelectorAll('[data-tab-button]');
@@ -50,20 +49,5 @@ function escondeTodasAbas() {
     }
 }
 
-// carousel
-const moviesContainer = document.querySelectorAll('.carousel__content');
-const nextBtn = document.querySelector('.next');
-const prevBtn = document.querySelector('.previous');
 
-moviesContainer.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width;
 
-nextBtn[i].addEventListener('click', () => {
-    item.scrollLeft += containerWidth;
-})
-prevBtn[i].addEventListener('click', () => {
-    item.scrollLeft -= containerWidth;
-})
-
-})
